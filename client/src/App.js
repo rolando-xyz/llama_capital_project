@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Main from './views/Main';
+import Navigation from './components/Navigation';
+import CreateUser from './views/CreateUser';
+import UserLogin from './views/UserLogin';
+
+const BadLink = () => {
+  return( <div className="container text-center text-danger mt-4"><h1 className="display-6">the ROUTE you attempted to travel was blocked by an unknown celestial event</h1></div> )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+        <Route path='/' element={<Navigation />}>
+          <Route index element={<Main />} />
+          <Route path='/user/new' element={<CreateUser />} />
+          <Route path='/user/login' element={<UserLogin />} />
+          <Route path='*' element={<BadLink />} />
+        </Route>
+      </Routes>
+  )
 }
 
-export default App;
+export default App
