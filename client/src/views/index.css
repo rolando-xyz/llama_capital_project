@@ -10,6 +10,10 @@ main {
 	height: 100vh;
 }
 
+h1 {
+    font-size: 50px;
+}
+
 .container {
     height: 100%;
     background-color: whitesmoke;
@@ -47,9 +51,13 @@ main {
 }
 
 .add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     height: 120px;
     width: 800px;
-    position: fixed;
+    position: absolute;
     top: 650px;
     background-color: gold;
     padding: 10px;
@@ -59,12 +67,18 @@ main {
 }
 
 .middle {
+    display: flex;
+    justify-content: center;
     height: 900px;
     background-color: blue;
     padding: 10px;
 }
 
 .icons {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100px;
     background-color: orange;
     padding: 10px;

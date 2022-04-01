@@ -19,6 +19,9 @@ const index = () => {
             </div>
             <div class="add">
                 <h1>Sign up now!</h1>
+                <div>
+                    <button className='btn btn-primary btn-block'>Sign Up</button>
+                </div>
             </div>
         </div>
         <div class="middle">
@@ -26,7 +29,9 @@ const index = () => {
 
             </div>
             <div class="icons">
-                
+                <h1>Trade Crypto Currency with Llama Capital</h1>
+                <p>Llama Capital provides a variety of currecies to trade from!</p>
+                <button className='btn btn-primary btn-block'>Trade Now</button>
             </div>
         </div>
     </div>
