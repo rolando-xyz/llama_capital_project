@@ -23,7 +23,7 @@ export const onInputChange = (name, value, dispatch, formState) => {
    });
 }
 
-// let password = "";
+let password = "";
 
 export const validateInput = (name, value) => {
    if (name === 'password'){
