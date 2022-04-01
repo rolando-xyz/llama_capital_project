@@ -19,14 +19,15 @@ main {
 .top {
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: 750px;
     padding: 10px;
 }
 .clear-box {
+    align-items: center;
     height: 200px;
     width: 800px;
     color: black;
-    padding: 10px;
+    padding-top: 100px;
     margin: 20px;
     opacity: 100%;
 }
@@ -34,6 +35,10 @@ main {
 .clear-box-items {
     display: flex;
     flex-direction: row;
+}
+
+.p {
+    padding: 20px;
 }
 
 .llogo {
@@ -45,7 +50,7 @@ main {
     height: 120px;
     width: 800px;
     position: fixed;
-    top: 300px;
+    top: 650px;
     background-color: gold;
     padding: 10px;
     margin: 10px;
