@@ -2,15 +2,13 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './Navigation.css';
 import './NavigationScript'
+import './MenuScript'
 
 const Navigation = () => {
   return (
     <div>
       <div class="nav">
         <div id="myMenu" class="dropdown">
-            {/* <div class="menu-button" tabindex="1">
-              <div class="menu-button-burger"></div>
-            </div> */}
             <a href="javascript: void(0)" class="buttonX"
             onclick="closeMenu()">&times;</a>
           <div class="dropdown-items">
@@ -62,7 +60,6 @@ const Navigation = () => {
 	    	</div>
 	    </div>
       </div>
-      
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation";
 import {BrowserRouter, Switch, Route} from "react-router-dom"
+import Index from "./views/Index"
 
 function App() {
   return (
@@ -7,8 +8,11 @@ function App() {
       <div>
         <h1>Coins</h1>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/menu">
             <Navigation/>
+          </Route>
+          <Route exact path="/">
+            <Index/>
           </Route>
         </Switch>
       </div>
