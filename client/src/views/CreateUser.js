@@ -11,7 +11,7 @@ function CreateUser() {
       axios.post('http://localhost:8000/api/user/new', user, {withCredentials:true})
          .then(res => {
             console.log(err);
-            navigate('/')
+            navigate('/user/dashboard')
          })
          .catch(err => {
             const errorResponse = err.response.data.errors;

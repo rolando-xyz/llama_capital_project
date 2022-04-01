@@ -11,7 +11,7 @@ function UserLogin() {
       axios.get('http://localhost:8000/api/user/login', user, {withCredentials: true})
          .then(res => {
             console.log(res);
-            // navigate('/')
+            navigate('/user/dashboard')
          })
          .catch(err => {
             const errorResponse = err.response.data.errors;
