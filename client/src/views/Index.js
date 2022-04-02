@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import group8 from '../Images/Group8.png'
+import { Link } from 'react-router-dom';
 
 const index = () => {
   return (
@@ -21,7 +22,7 @@ const index = () => {
             <div class="add">
                 <h1>Sign up now!</h1>
                 <div>
-                    <button className='btn btn-primary btn-block'>Sign Up</button>
+                    <Link to={'/user'}>Sign Up</Link>
                 </div>
             </div>
         </div>
@@ -32,7 +33,7 @@ const index = () => {
             <div class="icons">
                 <h2>Trade Crypto Currency with Llama Capital</h2>
                 <p>Llama Capital provides a variety of currecies to trade from!</p>
-                <button className='btn btn-primary btn-block'>Trade Now</button>
+                <Link to={'/user'}>Trade Now</Link>
             </div>
         </div>
         <div class="footer"></div>

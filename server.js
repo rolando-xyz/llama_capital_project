@@ -1,13 +1,25 @@
-const express = require("express")
-const cors = require("cors")
-const app = express()
+const express = require('express');
+const app = express();
+const http = require('http');
+const cors = require('cors');
+const jwt = require("jsonwebtoken");
 
-require('./configs/mongoose.config');
+require('dotenv').config();
 
-app.use(cors())
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
 
-require("./routes/coin.routes")(app)
+const server = http.createServer(app);
 
-app.listen(8000,() => console.log(`Listening on port: 8000`));
+require('./server/config/mongoose.config')
+
+const cookieParser = require('cookie-parser');
+
+app.use(cookieParser());
+app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
+
+require('./server/routes/llama.routes')(app);
+
+server.listen(8000, () =>
+   console.log("The server is running on port 8000.")
+);

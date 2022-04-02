@@ -45,9 +45,8 @@ h1 {
     padding: 20px;
 }
 
-.llogo {
-    width: 100%;
-    background-color: aqua;
+#llogo {
+    height: 400px;
 }
 
 .add {
