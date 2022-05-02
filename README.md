@@ -1,6 +1,8 @@
 # llama_capital_project
 
 ![Project Image](https://rolando-xyz.github.io/static/images/llamacapitalhome.png)
+![Project Image](https://github.com/rolando-xyz/rolando-xyz.github.io/blob/main/static/images/llamacapitalslider.png?raw=true)
+![Project Image](https://github.com/rolando-xyz/rolando-xyz.github.io/blob/main/static/images/llamacapitalcoininfo.png?raw=true)
 
 > This is a Dapp that uses various tools to automate and facilitate transitioning into decentralized finance.
 
