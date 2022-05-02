@@ -1,6 +1,6 @@
 # llama_capital_project
 
-![Project Image](project-image-url)
+![Project Image](https://rolando-xyz.github.io/static/images/llamacapitalhome.png)
 
 > This is a Dapp that uses various tools to automate and facilitate transitioning into decentralized finance.
 
