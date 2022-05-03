@@ -63,7 +63,6 @@ SOFTWARE.
 
 ## Author Info
 
-- Twitter - [@rolando_io](https://twitter.com/rolando_io)
 - Website - [Rolando](https://rolando-xyz.github.io/)
 
 [Back To The Top](#read-me-template)
