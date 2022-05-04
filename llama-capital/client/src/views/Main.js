@@ -35,9 +35,6 @@ function Main() {
             </div>
         </div>
         <div class="middle">
-            <div class="trade">
-
-            </div>
             <div class="icons">
                 <h2>Trade Crypto Currency with Llama Capital</h2>
                 <p>Llama Capital provides a variety of currecies to trade from!</p>
