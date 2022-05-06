@@ -22,7 +22,7 @@ function App() {
           <Route path='/user/login' element={<UserLogin />} />
           <Route path='/trade' element={<Trade />} />
           <Route path='/user/dashboard' element={<Dashboard />} />
-          <Route path='/singleCurrency/:id' element={<Currency />} />
+          <Route path='/singleCurrency/:id' element={<CoinInfo />} />
           <Route path='*' element={<BadLink />} />
         </Route>
       </Routes>

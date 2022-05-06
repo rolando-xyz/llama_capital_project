@@ -1,17 +1,16 @@
-import React, { useEffect,useState } from 'react'
-import CoinSlider from './CoinSlider'
+import React, { Component } from 'react'
 import CoinInfo from './CoinInfo'
-import Main from '../views/Main'
-import CreateUser from '../views/CreateUser'
+import CoinSlider from "./CoinSlider"
+import RegistrationForm from "./RegistrationForm"
 
-
-const Trade = () => {
-  return (
-    <div>
+export default class Trade extends Component {
+  
+  render() {
+    return (
+      <div>
         <CoinSlider />
-        <CreateUser />
-    </div>
-  )
+        <CoinSlider />
+      </div>
+    )
+  }
 }
-
-export default Trade
