@@ -11,7 +11,7 @@ import {
     makeStyles,
     ThemeProvider,
   } from "@material-ui/core/styles";
-  import { useNavigate } from "react-router-dom";
+  import { useHistory } from "react-router-dom";
   import { CryptoState } from "../CryptoContext";
   
   const useStyles = makeStyles((theme) => ({
@@ -37,7 +37,7 @@ import {
     const classes = useStyles();
     const { currency, setCurrency } = CryptoState();
   
-    const history = useNavigate();
+    const history = useHistory();
   
     return (
       <ThemeProvider theme={darkTheme}>

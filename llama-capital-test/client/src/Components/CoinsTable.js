@@ -18,7 +18,7 @@ import {
 } from "@material-ui/core";
 import axios from "axios";
 import { CoinList } from "../config/api";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
 
 export function numberWithCommas(x) {
@@ -50,7 +50,7 @@ export default function CoinsTable() {
   });
 
   const classes = useStyles();
-  const history = useNavigate();
+  const history = useHistory();
 
   const darkTheme = createTheme({
     palette: {
