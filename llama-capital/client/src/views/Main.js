@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import group9 from '../Images/Group8.png'
 import '../css/main.css'
+import Carousel from '../components/Carousel';
 
 
 function Main() {
@@ -33,8 +34,11 @@ function Main() {
                 <div class="vert"></div>
                 <h3>Learn and Earn</h3>
             </div>
+            
         </div>
+        <Carousel />
         <div class="middle">
+            
             <div class="icons">
                 <h2>Trade Crypto Currency with Llama Capital</h2>
                 <p>Llama Capital provides a variety of currecies to trade from!</p>

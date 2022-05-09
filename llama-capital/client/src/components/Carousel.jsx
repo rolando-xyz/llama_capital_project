@@ -2,22 +2,23 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
-import { FaArrowUp, FaArrowDown } from "react-icons/fa"
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
+import '../css/Carousel.css'
 
-const CoinSliderTwo = (props) => {
+const Carousel = (props) => {
 
     const Next = ({onClick}) => {
         return (
-            <div className='next' onClick={onClick}>
-                <FaArrowDown />
+            <div className='nextcarousel' onClick={onClick}>
+                <FaArrowRight />
             </div>
         )
     }
 
     const Previous = ({onClick}) => {
         return (
-            <div className='previous' onClick={onClick}>
-                <FaArrowUp />
+            <div className='previouscarousel' onClick={onClick}>
+                <FaArrowLeft />
             </div>
         )
     }
@@ -27,9 +28,6 @@ const CoinSliderTwo = (props) => {
         speed:200,
         slidesToShow:3,
         slidesToScroll:3,
-        vertical: true,
-        verticalSwiping: true,
-        variableHeight:false,
         nextArrow: <Next />,
         prevArrow: <Previous />
     }
@@ -43,13 +41,13 @@ const CoinSliderTwo = (props) => {
     }, []);
  
     return (
-        <div className='trade'>
+        <div className='tradecarousel'>
             <Slider {...settings}>
                 { markets && markets.map((market, idx) => {
                     return(
-                        <div className='coin-card' key={idx}>
-                            <div className='coin' key={idx}>
-                                <Link to={'/singleCurrency/' + market.id}><img id='coin' src={market.image} alt={market.id} /></Link>
+                        <div className='coin-cardcarousel' key={idx}>
+                            <div className='coincarousel' key={idx}>
+                                <Link to={'/singleCurrency/' + market.id}><img id='coincarousel' src={market.image} alt={market.id} /></Link>
                             </div>
                         </div>
                     )}
@@ -59,4 +57,4 @@ const CoinSliderTwo = (props) => {
     )
  }
 
-export default CoinSliderTwo
+export default Carousel

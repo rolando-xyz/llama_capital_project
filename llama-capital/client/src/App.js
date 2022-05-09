@@ -4,9 +4,7 @@ import Navigation from './components/Navigation';
 import CreateUser from './views/CreateUser';
 import UserLogin from './views/UserLogin';
 import Dashboard from './views/Dashboard';
-import Currency from './views/Currency';
 import Trade from './components/Trade';
-import CoinSlider from './components/CoinSlider';
 import CoinInfo from './components/CoinInfo';
 
 const BadLink = () => {

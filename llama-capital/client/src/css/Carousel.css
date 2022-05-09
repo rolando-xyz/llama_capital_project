@@ -1,53 +1,54 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-#coin {
-    height: 50px;
-    width: 50px;
+#coincarousel {
+    height: 100px;
+    width: 100px;
 }
 
-.trade {
-    width: 80px;
+.tradecarousel {
+    width: 100%;
     height: 270px;
     position: absolute;
-    left: 250px;
+    top: 525px;
 }
 
-.coin-card {
-    background-color: yellowgreen;
+.coin-cardcarousel {
     padding: 10px;
     margin: 0px;
 }
 
-.coin {
-    width: 50px;
-    height: 50px;
+.coincarousel {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
     padding: 5px;
     margin: 0px;
+    border-radius: 10px;
 }
 
-.next {
+.nextcarousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 90px;
+    width: 150px;
+    height: 50px;
     border-radius: 15px;
     background-color: rgb(0, 213, 255);
     position: absolute;
-    top: 140px;
-    right: 90px;
+    top: 127px;
+    left: 52%;
 }
 
-.previous {
+.previouscarousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 90px;
+    width: 150px;
+    height: 50px;
     border-radius: 15px;
     background-color: rgb(0, 213, 255);
     position: absolute;
-    top: 30px;
-    right: 90px;
+    top: 127px;
+    right: 52%;
 }

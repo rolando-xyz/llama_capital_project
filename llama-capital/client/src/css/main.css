@@ -1,6 +1,6 @@
 .container {
     height: 100%;
-    background-color: whitesmoke;
+    background-image: linear-gradient(to bottom left, rgb(103, 97, 64), rgb(255, 246, 192));
 }
 
 .top {
@@ -19,18 +19,16 @@
 .clear-box-items {
     display: flex;
     flex-direction: row;
-	align-items: flex-end;
+	align-items: flex-start;
 }
 
 .p {
-	margin-left: 50px;
-	margin-bottom: 50px;
+	margin-top: 75px;
 }
 
 #llogo {
-    height: 400px;
-	margin-left: 50px;
-	margin-right: 50px;
+    height: 600px;
+	margin-top: 50px;
 }
 
 .add {
@@ -41,15 +39,17 @@
     height: 100px;
     width: 100%;
     position: absolute;
-    top: 448px;
-    background-color: rgb(255, 251, 0);
+    top: 375px;
+    color: white;
+    background-color: black;
+    opacity: 45%;
     padding: 10px;
     margin: 10px;
     text-align: center;
 }
 
 .vert {
-	border-left: 2px solid black;
+	border-left: 2px solid white;
 	height: 60px;
 }
 
@@ -61,6 +61,7 @@
 	color: white;
     height: 500px;
     padding: 10px;
+    margin-top: 130px;
 }
 
 .icons {
