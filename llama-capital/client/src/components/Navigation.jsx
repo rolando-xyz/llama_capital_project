@@ -3,7 +3,7 @@ import {Link, Outlet} from 'react-router-dom'
 import './Navigation.css';
 import './NavigationScript'
 import './MenuScript'
-import group8 from '../Images/Group 8.png'
+import group5 from '../Images/Group 5.png'
 
 
 const Navigation = () => {
@@ -26,7 +26,7 @@ const Navigation = () => {
           </div>
           <span class="hamburger text-white" onclick="openMenu()">&#9776;</span>
           <div>
-            <img src={group8} alt='llogo'/>
+            <img src={group5} alt='llogo-nav' id='llogo-nav'/>
           </div>
           <div class="d-flex text-center justify-content-between align-items-center">
           </div>

@@ -50,7 +50,9 @@ function Main() {
                 <Link to={'/trade'}>Trade Now</Link>
             </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <h1 id='footer-content'>Llama Capital</h1>
+        </div>
       </div>
          
          

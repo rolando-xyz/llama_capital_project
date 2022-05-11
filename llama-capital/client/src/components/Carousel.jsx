@@ -28,6 +28,8 @@ const Carousel = (props) => {
         speed:200,
         slidesToShow:3,
         slidesToScroll:3,
+        autoplay: true,
+        pauseOnHover: true,
         nextArrow: <Next />,
         prevArrow: <Previous />
     }
