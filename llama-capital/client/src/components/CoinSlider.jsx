@@ -42,6 +42,12 @@ const CoinSlider = (props) => {
           .then(res => setMarkets(res.data))
           .catch(err => console.log(err));
     }, []);
+
+    function refreshPage() {
+        setTimeout(()=>{
+            window.location.reload(false);
+        }, 200);
+    }
  
     return (
         <div className='trade'>
@@ -50,7 +56,7 @@ const CoinSlider = (props) => {
                     return(
                         <div className='coin-card' key={idx}>
                             <div className='coin' key={idx}>
-                                <Link to={'/singleCurrency/' + market.id}><img id='coin' src={market.image} alt={market.id} /></Link>
+                                <Link to={'/singleCurrency/' + market.id} onClick={refreshPage}><img id='coin' src={market.image} alt={market.id} /></Link>
                             </div>
                         </div>
                     )}
