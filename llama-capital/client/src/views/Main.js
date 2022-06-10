@@ -4,7 +4,6 @@ import group9 from '../Images/Group8.png'
 import '../css/main.css'
 import Carousel from '../components/Carousel';
 
-
 function Main() {
    return (
       <div>
